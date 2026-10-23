@@ -1,0 +1,54 @@
+{
+  "name": "@local/dsh-windows-approval-notify",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Popup a Windows toast notification when a DSH task needs approval.",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "windows",
+    "toast",
+    "notification",
+    "approval",
+    "plugin",
+    "winrt",
+    "powershell"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DEVVE-1/dsh-windows-approval-notify.git"
+  },
+  "homepage": "https://github.com/DEVVE-1/dsh-windows-approval-notify#readme",
+  "bugs": {
+    "url": "https://github.com/DEVVE-1/dsh-windows-approval-notify/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "win32"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "notify-host.ps1",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
