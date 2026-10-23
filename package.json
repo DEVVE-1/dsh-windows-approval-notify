@@ -1,9 +1,9 @@
 {
   "name": "@local/dsh-windows-approval-notify",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
-  "description": "Popup a Windows toast notification when a DSH task needs approval.",
+  "description": "Pop a Windows toast when a DSH task needs approval or finishes, but only while DSH is not the foreground program.",
   "license": "MIT",
   "keywords": [
     "dsh",
@@ -11,25 +11,8 @@
     "cordis",
     "windows",
     "toast",
-    "notification",
     "approval",
-    "plugin",
-    "winrt",
-    "powershell"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DEVVE-1/dsh-windows-approval-notify.git"
-  },
-  "homepage": "https://github.com/DEVVE-1/dsh-windows-approval-notify#readme",
-  "bugs": {
-    "url": "https://github.com/DEVVE-1/dsh-windows-approval-notify/issues"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "os": [
-    "win32"
+    "notification"
   ],
   "exports": {
     ".": "./index.js",
@@ -39,11 +22,11 @@
   "files": [
     "index.js",
     "notify-host.ps1",
+    "foreground.ps1",
     "cordis.patch.yml",
     "locale/*.json",
     "icon.svg",
     "README.md",
-    "README.en.md",
     "LICENSE"
   ],
   "dsh": {
