@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Windows 提权通知",
-    "description": "DSH 任务需要提权（等待你授权）时，立刻弹出 Windows 通知，窗口在后台也能第一时间看到。"
+    "title": "Windows 消息通知",
+    "description": "DSH 需要提权或一轮任务完成时弹出 Windows 通知；DSH 已经在前台时不打扰。"
   }
 }
