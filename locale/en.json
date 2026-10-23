@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Windows Approval Notify",
-    "description": "Pops a Windows toast notification the moment a DSH task needs approval (privilege escalation), so you notice while the window is in the background."
+    "title": "Windows Message Notify",
+    "description": "Pops a Windows toast when a DSH task needs approval or a turn finishes, but stays quiet while the DSH window is in the foreground."
   }
 }
