@@ -1,5 +1,7 @@
 # Windows 消息通知（DSH 插件）
 
+[English](README.en.md) | 简体中文
+
 DSH 需要提权、等待你授权，或一轮任务正常结束时，弹出一条 Windows 通知（显示为 **DeepSeek Harness**）。
 只有 **DSH 不是当前前台程序** 时才弹：你正盯着 DSH 界面时不打扰。
 插件只做转发：不参与授权决策，不改变审批结果，也不做其它任何事情。
@@ -56,13 +58,13 @@ plugin_manager install_bundle target = <本目录的绝对路径>
 例如：
 
 ```text
-plugin_manager install_bundle target = G:\DS-test\plugins\dsh-windows-approval-notify
+plugin_manager install_bundle target = D:\plugins\dsh-windows-approval-notify
 ```
 
 安装后插件行立即生效，无需重启 DSH。卸载：
 
 ```text
-plugin_manager remove_bundle target = @local/dsh-windows-approval-notify
+plugin_manager remove_bundle target = dsh-windows-approval-notify
 ```
 
 ## License
