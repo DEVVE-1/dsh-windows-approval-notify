@@ -1,4 +1,4 @@
 - insert:
     - id: windows-approval-notify
-      name: '@local/dsh-windows-approval-notify'
+      name: 'dsh-windows-approval-notify'
       config: {}
